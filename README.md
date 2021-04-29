@@ -6,7 +6,7 @@
 
 ---
 
-## using mupdf, convert PNGs to PDF
+## convert PNGs to PDFs, using mupdf
 
 ### folder constructure
 
