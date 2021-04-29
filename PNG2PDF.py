@@ -14,12 +14,13 @@ def main():
     
     cmds = []
     for i in range(0, len(bookNames)):
-        tmp = 'mutool.exe convert -o ' + bookNames[i] + '.pdf '
+        tmp = 'mutool.exe convert -o PDF\\' + bookNames[i] + '.pdf '
         for j in range(0, len(bookPNGs[i])):
             #print(bookPNGs[i][j])
             tmp = tmp + str(bookNames[i]) + '\\' + str(bookPNGs[i][j] + ' ')
         cmds.append(tmp)
     
+    os.system('mkdir PDF')
     for cmd in cmds:
         os.system(cmd)
     
