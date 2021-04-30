@@ -10,7 +10,7 @@
 
 ---
 
-## PNGs <-> PDFs, using mupdf tool
+## PNG <-> PDF, using mupdf tool
 
 ### PNG to PDF
 
