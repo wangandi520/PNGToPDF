@@ -1,4 +1,4 @@
-## 使用mupdf批量转换png到pdf
+## PNG，PDF格式互转，使用mupdf tool
 
 ### PNG to PDF
 
@@ -10,7 +10,7 @@
 
 ---
 
-## convert PNGs to PDFs, using mupdf
+## PNGs <-> PDFs, using mupdf tool
 
 ### PNG to PDF
 
@@ -19,3 +19,8 @@ put PNG2PDF.py and many folders(each folder = a book) in a same folder, each fol
 ### PDF to PNG
 
 put PDF2PNG.py and many PDFs(each PDF = a book) in a same folder, output in PNG folder.
+
+---
+
+[mupdf document](https://mupdf.com/docs/manual-mutool-convert.html)
+[mupdf download](https://www.mupdf.com/downloads/index.html)
