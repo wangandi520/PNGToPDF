@@ -21,7 +21,7 @@ def main():
     for bookName,bookDir in zip(bookNames,bookDirs):
         #print(bookDir)
         startTime = time.time()
-        print('Converting PNG to PDF: ' + bookName + '...')
+        print('Converting : ' + bookName + '...')
         os.system('convert "' + bookDir + '\\*.{png,jpeg,jpg}" -quality 100 PDF\\' + bookName + '.pdf')
         endTime = time.time()
         print('  Completed. Converted %d file(s) in %d second(s).' % (len(os.listdir(bookDir)) , (endTime - startTime)))
