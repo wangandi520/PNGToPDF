@@ -9,7 +9,7 @@ def main(localDir):
     bookDirs = []
     allFiles = os.listdir(localDir)
     for fileName in allFiles:
-        if os.path.isdir(os.path.join(localDir, fileName)) and fileName != 'PDF':
+        if os.path.isdir(os.path.join(localDir, fileName)) and fileName != 'PDF' and fileName != '.git':
             bookNames.append(fileName)
     for bookName in bookNames:
         subDir = os.listdir(os.path.join(localDir, bookName))
@@ -22,7 +22,7 @@ def main(localDir):
     print('Found ' + str(len(bookNames)) + ' book(s):')
     for bookName in bookNames:
         print('  ' + bookName)
-    if not os.path.exists(os.path.join(localDir,'PDF')):
+    if not os.path.exists(os.path.join(localDir,'PDF')) and (len(bookNames) > 0):
         os.system('mkdir ' + os.path.join(localDir,'PDF'))
     for bookName,bookDir in zip(bookNames,bookDirs):
         startTime = time.time()
